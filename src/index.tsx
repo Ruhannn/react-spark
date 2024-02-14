@@ -63,7 +63,6 @@ const SparkContainer: React.FC<SparkContainerProps> = ({
 
   useEffect(() => {
     const handleClick = (e: MouseEvent): void => {
-      e.preventDefault();
       const center: { x: number; y: number } = { x: e.pageX, y: e.pageY };
       makeBurst(center);
     };
