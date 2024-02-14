@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,6 +36,10 @@
   "name": "@kamiru/react-spark",
   "author": "Ruhannn",
   "module": "dist/react-spark.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ruhannn/react-spark.git"
+  },
   "size-limit": [
     {
       "path": "dist/react-spark.cjs.production.min.js",
