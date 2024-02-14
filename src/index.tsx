@@ -5,6 +5,7 @@ interface SparkContainerProps {
   children: React.ReactNode;
   sparkElementWidth?: number;
   distance?: number;
+  sparkColor?: string;
   randomnessOn?: boolean;
 }
 
@@ -13,6 +14,7 @@ const SparkContainer: React.FC<SparkContainerProps> = ({
   sparkElementWidth = 30,
   distance = 40,
   randomnessOn = true,
+  sparkColor = 'white',
 }) => {
   const createTransformSteps = (...args: string[]): string[] => {
     if (args.length === 0) {
@@ -108,7 +110,7 @@ const SparkContainer: React.FC<SparkContainerProps> = ({
       width: ${sparkElementWidth}px;
       height: 8px;
       border-radius: 3px;
-      background-color: white;
+      background-color: ${sparkColor};
       transform: none;
     }
   `;
